@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<package type="big_box" width="5" height="5" length="5">
+  <sender id="sender1">
+    <name>John Doe</name>
+    <companyName>Palo Alto Networks</companyName>
+    <returnAddress>
+      <address1 id="001">4401 Great America Pkwy</address1>
+      <address2 />
+      <city>Santa Clara</city>
+      <state>CA</state>
+      <zip>95054</zip>
+      <phone>408-123-4567</phone>
+    </returnAddress>
+  </sender>
+  <receiver>
+    <name>Mary Doe</name>
+    <companyName />
+    <shippingAddress>
+      <address1 id="101">1234 Abc Street</address1>
+      <address2>Suite 500</address2>
+      <city>Some City</city>
+      <state>New York</state>
+      <zip>10001</zip>
+      <phone>333-444-5678</phone>
+    </shippingAddress>
+    <contents id="201">
+      <content id="201-01" type="Book" weight="1lb" description="It's a book" />
+      <content id="201-02" type="Laptop" weight="3lb" description="Apple Macbook Pro" />
+      <content id="201-03" type="charger" weight="1.5lb" description="computer charger" />
+    </contents>
+  </receiver>
+  <shipper id="301">
+    <name>UPS</name>
+    <date>01-01-2016</date>
+    <tracking>1z1e125019294030</tracking>
+    <type>overnight</type>
+    <eta>01-02-2016</eta>
+    <payment type="credit">
+      <name>John Doe</name>
+      <cardnumber>4716939916095744</cardnumber>
+      <expDate>01/02/2017</expDate>
+      <billingAddress>
+        <sameAsShipping value="true" />
+      </billingAddress>
+    </payment>
+  </shipper>
+  <customdata>
+    <data name="Company" value="Palo Alto Networks" />
+    <data name="Author" value="Michael Lue" />
+    <data name="Document" value="This is a sample XML used for testing purposes only" />
+    <data name="Copyright" value="Copyright 2007-2016 Palo Alto Networks" />
+  </customdata>
+</package>
